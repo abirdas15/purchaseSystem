@@ -46,7 +46,7 @@
     User Login URL: http://127.0.0.1:8000
    
     Admin Login URL: http://127.0.0.1:8000/admin/auth/login
-    Email: admin@gamil.com
+    Email: admin@gmail.com
     Password: 12345678
 
 
