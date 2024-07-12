@@ -44,8 +44,8 @@
                                     <label for="html5-email-input" class="col-md-2 col-form-label">Mode</label>
                                     <div class="col-md-10">
                                         <select class="form-control" name="mode">
-                                            <option value="sandbox" {{ $paymentSetting->mode == 'sandbox' ? 'selected' : '' }}>Sandbox</option>
-                                            <option value="live" {{ $paymentSetting->mode == 'live' ? 'selected' : '' }}>Live</option>
+                                            <option value="sandbox" {{ !empty($paymentSetting->mode) && $paymentSetting->mode == 'sandbox' ? 'selected' : '' }}>Sandbox</option>
+                                            <option value="live" {{ !empty($paymentSetting->mode) && $paymentSetting->mode == 'live' ? 'selected' : '' }}>Live</option>
                                         </select>
                                         @if($errors->has('mode'))
                                             <div class="text-danger">{{ $errors->first('mode') }}</div>

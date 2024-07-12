@@ -22,6 +22,11 @@
                         </tr>
                         </thead>
                         <tbody class="table-border-bottom-0">
+                            @if (count($users) == 0)
+                                <tr>
+                                    <th colspan="3" class="text-center">No Data found</th>
+                                </tr>
+                            @endif
                             @foreach($users as $user)
                                 <tr>
                                     <td>{{ $user->username }}</td>
